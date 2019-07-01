@@ -8,6 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ly-api-gateway" />
+        <module name="ly-auth-common" />
+        <module name="ly-auth-service" />
+        <module name="ly-cart" />
+        <module name="ly-cart1" />
         <module name="ly-common" />
         <module name="ly-goods-page" />
         <module name="ly-item-interface" />
@@ -21,6 +25,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="es-work" target="1.5" />
+      <module name="ly-cart" target="1.8" />
+      <module name="ly-cart (1)" target="1.8" />
       <module name="ly-goods-page (1)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -28,6 +34,12 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="es-work" options="" />
       <module name="ly-api-gateway" options="-parameters" />
+      <module name="ly-auth-center" options="-parameters" />
+      <module name="ly-auth-common" options="-parameters" />
+      <module name="ly-auth-service" options="-parameters" />
+      <module name="ly-cart" options="-parameters" />
+      <module name="ly-cart (1)" options="-parameters" />
+      <module name="ly-cart1" options="-parameters" />
       <module name="ly-common" options="-parameters" />
       <module name="ly-goods-page" options="-parameters" />
       <module name="ly-goods-page (1)" options="-parameters" />

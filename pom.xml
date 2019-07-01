@@ -18,6 +18,11 @@
         <module>ly-search</module>
         <module>ly-goods-page</module>
         <module>ly-user</module>
+        <module>ly-auth-center</module>
+        <module>ly-cart</module>
+        <module>ly-cart</module>
+        <module>ly-cart</module>
+        <module>ly-cart1</module>
     </modules>
 
     <packaging>pom</packaging>

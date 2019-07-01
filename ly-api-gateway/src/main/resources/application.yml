@@ -7,7 +7,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:10086/eureka
-    registry-fetch-interval-seconds: 5
+    registry-fetch-interval-seconds: 3
   instance:
     prefer-ip-address: true
     ip-address: 127.0.0.1
@@ -26,6 +26,8 @@ zuul:
   add-host-header: true #携带请求本身的host头信息
   sensitive-headers:     #敏感头过滤失效
 ribbon:
+  eureka:
+    enable: true
   ConnectTimeout: 250 # 连接超时时间(ms)
   ReadTimeout: 2000 # 通信超时时间(ms)
   OkToRetryOnAllOperations: true # 是否对所有操作重试
@@ -38,3 +40,15 @@ hystrix:
         isolation:
           thread:
             timeoutInMillisecond: 10000 # 熔断超时时长：10000ms
+ly:
+  jwt:
+    pubKeyPath: D:/rsa/rsa.pub # 公钥地址
+    cookieName: LY_TOKEN # cookie的名称
+  filter:
+    allowPaths:
+      - /api/auth
+      - /api/search
+      - /api/user/register
+      - /api/user/check
+      - /api/user/code
+      - /api/item
